@@ -1,0 +1,123 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+.ct_bd{
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+}
+.ct_search{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    background-color: #ededed;
+    border-bottom: 1px solid #ccc;
+}
+.ct_l,.ct_r{
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 0;
+    background: url("../images/sprites.png");
+    background-size: 200px 200px;
+    padding:14px;
+    background-origin: content-box;
+    /*设置是裁切，控制的是显示*/
+    background-clip: content-box;
+}
+.ct_l{
+    left: 0;
+    background-position: -20px 0;
+}
+.ct_r{
+    right: 0;
+    background-position: -60px 0;
+}
+.ct_srh{
+    height: 100%;
+    flex: 1;
+    width: 100%;
+    margin: 0 60px;
+}
+.ct_srh>input{
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    margin: 5px 0;
+    padding-left: 5px;
+}
+.ca_jb{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+.ca_jb .ca_left{
+    width: 100px;
+    height: 100%;
+    background-color: #ededed;
+    overflow: hidden;
+    position: relative;
+}
+.ca_jb .ca_left ul{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+
+}
+.ca_jb .ca_left ul li{
+    border-bottom: 1px solid #ccc;
+    line-height: 50px;
+    text-align: center;
+}
+.ca_jb .ca_left ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.ca_jb .ca_left ul li.active a{
+    background-color: #fff;
+    border-right: none;
+    border-bottom: none;
+    color: #e92322;
+}
+.ca_jb .ca_right{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.ca_tu{
+   width: 100%;
+    display:block;
+}
+.ca_tu>img{
+    width: 100%;
+    display: block;
+}
+.ca_right>h3{
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.ca_scllo{
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+.ca_scllo ul{
+    width: 100%;
+}
+.ca_scllo ul li{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
