@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.j_t{
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    background-color: #ccc;
+    margin: 0 auto;
+   overflow: hidden;
+}
+.j_search{
+    position: fixed;
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    height: 40px;
+    background-color: #e92322;
+    z-index: 9999;
+}
+.j_logo{
+    position: absolute;
+    width: 56px;
+    height: 30px;
+    top:5px;
+    left: 10px;
+    background-image:url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position:0px -108px;
+}
+.j_searchbox{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-right: 50px;
+    margin-left: 75px;
+}
+.j_searchbox>input{
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 30px;
+}
+.j_login{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:0;
+    right: 0;
+    line-height: 40px;
+    color: #fff;
+}
+.j_searchbox::before{
+    content: "";
+    width: 27px;
+    height: 23px;
+    position: absolute;
+    top:9px;
+    left: 5px;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -56px -108px;
+}
+.j_banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.j_bannerimg{
+    width:1000%;
+    position: relative;
+}
+.j_bannerimg>li{
+    width: 10%;
+    float: left;
+}
+.j_bannerimg>li img{
+    width: 100%;
+    display: block;
+}
+/*圆点*/
+.j_bannerdian{
+    position: absolute;
+    width: 128px;
+    height: 10px;
+    left:50%;
+    bottom:5px;
+    transform: translate(-50%,0);
+}
+.j_bannerdian>li{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    float: left;
+    margin-left: 10px;
+    list-style: none;
+}
+.wihte{
+    background-color: #fff;
+}
+.j_bannerdian>li:first-of-type{
+    margin-left: 0px;
+}
+
+.j_nav{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+ }
+.j_nav ul{
+    overflow: hidden;
+}
+.j_nav li{
+     width: 25%;
+     float: left;
+    text-align: center;
+    margin-top: 5px;
+}
+.j_nav li img{
+    width: 39px;
+}
+.j_nav li p{
+    line-height: 25px;
+}
+/*主体*/
+.j_bd{
+    width: 100%;
+}
+.j_bdbox{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+    /*height: 100px;*/
+    box-shadow: 1px 1px 1px rgba(143, 143, 143, 0.84);
+}
+/*时间*/
+.j_hour{
+    width: 100%;
+    height: 30px;
+    /*background-color: pink;*/
+    display: flex;
+}
+.j_l{
+    position: relative;
+    flex: 2;
+    display: flex;
+    /*background-color: skyblue;*/
+}
+.j_r{
+    position: relative;
+    text-align: right;
+    padding-right: 10px;
+    flex: 1;
+    line-height: 30px;
+    color: #c0c0c0;
+    /*background-color: mediumvioletred;*/
+}
+.j_l .j_icon{
+    width:16px ;
+    height: 20px;
+    display: inline-block;
+    background-image: url("../images/seckill-icon.png");
+    background-size: 16px 20px;
+    margin-left: 10px;
+    margin-top:3px;
+}
+.j_l .j_mz{
+    color: #e92322;
+    width: 52px;
+    position: absolute;
+    display: inline-block;
+    line-height: 30px;
+    margin-left: 30px;
+}
+.j_l .j_shijian{
+      margin-left: 65px;
+    line-height: 30px;
+}
+.j_l .j_shijian span{
+    padding: 0 2px;
+    background-color: #000;
+    color:#fff
+}
+.j_l .j_shijian span:nth-last-of-type(3n){
+    background-color: transparent;
+    color: #000;
+}
+.j_bdbox .j_tu1{
+    padding: 20px;
+}
+.j_tu1>ul{
+    width: 100%;
+    text-align: center;
+}
+.j_tu1>ul>li{
+    width: 33.33%;
+    float: left;
+}
+.j_tu1>ul>li img{
+    width: 60%;
+    display: inline-block;
+}
+/*京东超市*/
+.j_jd{
+    width: 100%;
+    position: relative;
+    height: 30px;
+    border-bottom:1px solid #ccc;
+    line-height: 30px;
+}
+.j_jd h3{
+    color: #757575;
+    display: inline-block;
+    margin-left: 30px;
+}
+.j_jd::before{
+    content: "";
+    width: 3px;
+    height: 12px;
+    position: absolute;
+    left: 10px;
+    top:10px;
+    background-color: #e92322;
+
+}
+.j_tu2{
+    width: 100%;
+}
+.j_tu2 .j_a50{
+    width: 50%;
+    display: inline-block;
+}
+.j_tu2 .j_a50 img{
+    width: 100%;
+    display: inline-block;
+}
+.b_left{
+    border-left:1px solid #ccc
+}
+.b_bottom{
+    border-bottom:1px solid #ccc;
+}
